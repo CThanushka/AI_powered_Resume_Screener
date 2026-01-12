@@ -1,41 +1,47 @@
-🧠 AI-Powered Resume Screener
+📄🤖 AI-Powered Resume Screener
 
-This project automatically ranks resumes by matching them against a job description using AI embeddings.
+This project is an AI-powered resume ranking system that analyzes multiple resumes and compares them against a job description to find the best match. It uses NLP, embeddings, and cosine similarity to measure how closely each resume aligns with job requirements.
 
-🔍 Features
+🚀 Features
 
-PDF/text resume extraction
+✨ Upload multiple resumes (PDF / DOCX / TXT)
+✨ Upload one job description
+✨ Automatic text extraction
+✨ Embedding generation using Sentence Transformers
+✨ Resume ranking using cosine similarity
+✨ Output sorted from best-match to lowest
 
-Job description parsing
+🧠 How It Works
 
-Text embedding using SentenceTransformers
+📥 User uploads:
 
-Cosine similarity scoring
+1 job description
 
-Ranking system
+Multiple resumes
 
-Works in Google Colab
+🔍 The system extracts text using:
 
-🛠️ Tech Stack
+pypdf → PDF
 
-Python
+python-docx → DOCX
 
-SentenceTransformers
+Raw TXT
 
-NumPy
+🧠 Text converted to vector embeddings using:
 
-PyPDF2
+all-MiniLM-L6-v2 model
 
-Google Colab
+📊 Cosine similarity is calculated:
 
-📌 How It Works
+Higher score = better resume match
 
-Upload resumes + job description
+🏆 Resumes ranked and displayed
 
-System extracts text
-
-Converts text to embeddings
-
-Measures similarity
-
-Outputs ranked candidates
+🧰 Technologies Used
+Technology	Purpose
+🧠 Sentence Transformers	Embeddings
+🔢 Cosine Similarity	Ranking
+📄 pypdf	Extract PDF text
+📝 python-docx	Extract DOCX text
+🔥 PyTorch	Model backend
+☁️ Google Colab	Simple execution
